@@ -1,7 +1,12 @@
 // main.cpp
 #include <iostream>
 #include "matematicas.h" // Incluimos nuestro contrato
-
+/*void probarFactorial() {
+    std::cout << "Bienvenido al programa de matemáticas" << std::endl;
+    std::cout << "Ingresa el primer numero" << std::endl;
+    int numero;
+    std::cin >> numero;
+}*/
 void probarMatematicas()
 {
     std::cout << "Bienvenido al programa de matemáticas" << std::endl;
@@ -15,12 +20,19 @@ void probarMatematicas()
     std::cin >> num2;
     std::cin.clear();
     std::cin.ignore(10000, '\n');
+    int num3;
+    std::cout << "Ingresa el tercer numero" << std::endl;
+    std::cin >> num3;
+    std::cin.clear();
+    std::cin.ignore(10000, '\n');
 
     int resultado_suma = sumar(num1, num2); // Funciona
     int resultado_resta = restar(num1, num2); // Funciona
+    int resultado_factorial = factorial(num3);
 
     std::cout << "Suma: " << resultado_suma << std::endl;
     std::cout << "Resta: " << resultado_resta << std::endl;
+    std::cout << "Factorial: " << resultado_factorial << std::endl;
 }
 
 void probarArreglos()
