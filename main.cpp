@@ -1,6 +1,7 @@
 // main.cpp
 #include <iostream>
 #include "matematicas.h" // Incluimos nuestro contrato
+#include "matrices.h"
 /*void probarFactorial() {
     std::cout << "Bienvenido al programa de matemáticas" << std::endl;
     std::cout << "Ingresa el primer numero" << std::endl;
@@ -49,7 +50,8 @@ void probarArreglos()
 
 int main()
 {
-    probarMatematicas();
-    probarArreglos();
+    //probarMatematicas();
+    //probarArreglos();
+    saludar();
     return 0;
 }
